@@ -5,7 +5,7 @@ import { altairExpress } from 'altair-express-middleware';
 import schema from './schema/schema.js'
 import colors from 'colors'
 import { connectDB } from './config/db.js';
-
+import cors from 'cors'
 dotenv.config()
 // Create an express instance serving all methods on `/graphql`
 // where the GraphQL over HTTP express request handler is
@@ -13,6 +13,7 @@ dotenv.config()
 const app = express();
 // connect to db
 connectDB(); 
+app.use(cors())
 const port = process.env.PORT || 5000
 
 app.use(express.json())

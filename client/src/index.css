@@ -35,7 +35,7 @@ code {
 }
 
 .btn-primary,
-.bg-primary {
+.bg-primary{
   background-color: #13f04e !important;
   border: none;
 }
@@ -45,14 +45,23 @@ code {
   opacity: 0.9;
 }
 
-/* .btn-secondary {
+.btn-secondary,
+.border-secondary{
   background-color: #a182e0;
 }
 
 .btn-secondary:hover {
   background-color: #8155d8;
   opacity: 0.9;
-} */
+}
+
+.border-green{
+  border-color:#13f04e;
+}
+
+.border-lila {
+   border-color:#8155d8;
+}
 
 .icon {
   margin-right: 5px;

@@ -1,6 +1,7 @@
 import{useQuery} from '@apollo/client'
 import ClientRow from './ClientRow'
 import { GET_CLIENTS } from '../queries/clientQueries'
+import Spinner from './Spinner'
 
 
 
@@ -9,7 +10,7 @@ const Clients = () => {
 
     if(loading){
         return (
-            <p>Loading...</p>
+           <Spinner/>
         )
     }
     if(error){
